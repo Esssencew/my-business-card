@@ -1,0 +1,53 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #ffffff;
+    background: #353535;
+    border-bottom: 6px solid #3c6e71;
+}
+
+.card:hover {
+    color: #efd6ac;
+    background: #432534;
+    border-bottom: 6px solid #c44900;
+    transition: 4s;
+    animation-name: drop;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes drop {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(25deg);
+        transform: rotate(-25deg);
+    }
+    50% {
+        transform: rotate(45deg);
+        transform: rotate(-45deg);
+    }
+    75% {
+        transform: rotate(25deg);
+        transform: rotate(-25deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
